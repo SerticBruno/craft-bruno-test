@@ -1,0 +1,33 @@
+contentColumnType: string
+fieldGroup: 628121ed-3b8d-4b79-be5b-26e82898352c # Common
+handle: featureImage
+instructions: ''
+name: 'Feature Image'
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowUploads: true
+  allowedKinds:
+    - image
+  defaultUploadLocationSource: 'volume:4f0c74d0-f1fa-483b-9cb8-9b260405c864' # Uploads
+  defaultUploadLocationSubpath: ''
+  limit: '1'
+  localizeRelations: false
+  previewMode: full
+  restrictFiles: '1'
+  selectionLabel: 'Add Feature Image'
+  showSiteMenu: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  singleUploadLocationSource: 'volume:4f0c74d0-f1fa-483b-9cb8-9b260405c864' # Uploads
+  singleUploadLocationSubpath: ''
+  source: null
+  sources:
+    - 'volume:4f0c74d0-f1fa-483b-9cb8-9b260405c864' # Uploads
+  targetSiteId: null
+  useSingleFolder: false
+  validateRelatedElements: false
+  viewMode: large
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

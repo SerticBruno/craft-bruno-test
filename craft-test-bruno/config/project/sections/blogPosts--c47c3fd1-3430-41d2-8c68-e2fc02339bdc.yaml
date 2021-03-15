@@ -1,0 +1,11 @@
+enableVersioning: true
+handle: blogPosts
+name: 'Blog Posts'
+propagationMethod: all
+siteSettings:
+  7c70816a-1fa8-4637-b04e-5872560bec6d: # Craft CMS Bruno
+    enabledByDefault: true
+    hasUrls: true
+    template: blog\_entry
+    uriFormat: 'blog/{slug}'
+type: channel

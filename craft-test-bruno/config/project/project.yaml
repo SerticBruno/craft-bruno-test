@@ -1,0 +1,22 @@
+dateModified: 1615823241
+email:
+  fromEmail: sertic.bruno@gmail.com
+  fromName: 'Craft CMS Bruno'
+  transportType: craft\mail\transportadapters\Sendmail
+plugins:
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+system:
+  edition: solo
+  live: true
+  name: 'Craft CMS Bruno'
+  schemaVersion: 3.6.6
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
