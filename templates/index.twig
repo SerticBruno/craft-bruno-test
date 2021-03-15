@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ siteName }}</title>
@@ -10,32 +11,25 @@
 <body>
 
     <header class="header">
-        
         <a href="{{ siteUrl }}" class="logo">
-            <img src="{{ siteUrl }}assets/images/logo.png" alt="Craft CMS">
+            <img src="{{ siteUrl }}assets/images/logo.png" alt="Logo">
         </a>
 
         <nav class="nav">
-        
-        {% set slug = craft.app.request.getSegment(1) %}
+          {% set slug = craft.app.request.getSegment(1) %}
 
-        {% for link in header.navigation %}
-            {% set destination = link.linkDestination.one() %}
-            <a href="{{ destination.url }}" class="nav-link {% if slug == destination.slug %}nav-link--active{% endif %}">{{ link.linkText }}</a>
+          {% for link in header.navigation %}
+              {% set destination = link.linkDestination.one() %}
+              <a href="{{ destination.url }}" class="nav-link {% if slug == destination.slug %}nav-link--active{% endif %}">{{ link.linkText }}</a>
 
-        {% endfor %}
-
+          {% endfor %}
         </nav>
-
-
     </header>
     
     <div class="content-column">
-
         {% block content %}
 
         {% endblock %}
-
     </div>
 
     <footer class="footer">
